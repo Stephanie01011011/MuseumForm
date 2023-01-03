@@ -1,0 +1,46 @@
+body{
+   
+   margin: 0;
+   background-color: rgb(31, 31, 50); 
+    
+}
+.container{
+    display: flex;
+    width: 85vw;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+   
+}
+.left{
+background-color: black;
+flex: 1;
+height: 100vh;
+background-image: url(images/matteo-maretto-9KkPloRgOUY-unsplash.jpg);
+background-repeat: no-repeat;
+
+background-size: cover;
+background-position: center center;
+position: relative;
+text-align: center;
+
+
+
+
+
+}
+.right{
+background-color: rgb(220, 218, 222);
+flex: 1.5;
+height: 100vh;
+
+
+}
+#credText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    font-size: 12px;
+   
+}
