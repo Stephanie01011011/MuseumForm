@@ -1,46 +1,74 @@
+
 body{
-   
-   margin: 0;
-   background-color: rgb(31, 31, 50); 
+    margin: 0;
     
 }
 .container{
     display: flex;
-    width: 85vw;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
    
 }
 .left{
-background-color: black;
-flex: 1;
-height: 100vh;
-background-image: url(images/matteo-maretto-9KkPloRgOUY-unsplash.jpg);
-background-repeat: no-repeat;
-
-background-size: cover;
-background-position: center center;
-position: relative;
-text-align: center;
-
-
-
-
-
+    background-image: url(images/robin-schreiner-YKE4zTW5lic-unsp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35vw;
+    color: black;
 }
+
 .right{
-background-color: rgb(220, 218, 222);
-flex: 1.5;
-height: 100vh;
+    background-color: #5a827a;
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
 
 
 }
-#credText{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.message{
+    height: 35vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    align-items: flex-end;
+}
+.form{
+    background-color: rgb(255, 253, 253);
+    height: 30vh;
+    padding-left: 5%;
+}
+.account{
+    height: 35vh;
+}
+
+form{
     
-    font-size: 12px;
-   
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    
+    
 }
+.col1{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    
+}
+input{
+    width: 200px;
+    border-radius: 4px;
+}
+
+   
