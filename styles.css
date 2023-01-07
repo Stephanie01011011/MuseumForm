@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(font/OpenSans-VariableFont_wdth\,wght.ttf) format("opentype");
+}
 
 body{
     margin: 0;
+    font-family: "CustomFont";
     
 }
 .container{
@@ -15,15 +20,45 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 35vw;
+    width: 40vw;
     color: black;
-}
-
-.right{
-    background-color: #5a827a;
     display: flex;
     flex-direction: column;
-    width: 65vw;
+    
+    
+    
+}
+.forImage{
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+   
+}
+#odin-img{
+    height: 120px;
+  
+}
+.logo-bg{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+    
+}
+
+
+.right{
+    background-color: #ecf8f5;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    width: 60vw;
+    justify-content: center;
 
 
 }
@@ -32,25 +67,41 @@ body{
     display: flex;
     justify-content: flex-start;
     margin-left: 5%;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     align-items: flex-end;
+    color: black;
+    font-size: large;
+    
+    
 }
 .form{
     background-color: rgb(255, 253, 253);
-    height: 30vh;
+    height: 35vh;
     padding-left: 5%;
+    box-shadow: 0 3px 5px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.form-title{
+    font-size: large;
 }
 .account{
-    height: 35vh;
+    height: 30vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 
 form{
     
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    /*gap: 50px;*/
+    width: 60%;
     font-size: .8rem;
     line-height: 1.5rem;
+    justify-content: space-between;
     
     
 }
@@ -67,8 +118,74 @@ form{
     
 }
 input{
-    width: 200px;
+    width: 10vw;
+    height: 20px;
     border-radius: 4px;
+    border: 1px solid rgb(194, 192, 192);
+    border-width: 2px;
+    
+    
+    
+    
+}
+input:focus{
+    outline: blue;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px rgb(227, 225, 225);
+}
+input:invalid{
+    border: 1px solid red;
+    outline: none;
+   
 }
 
+.form-title{
+    color: #5a827a;
+    text-shadow: 0.3px 0.3px 0.3px grey;
+}
+button{
+    width: 180px;
+    height: 40px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-left: 5%;
+    box-shadow: 0px 2px 4px black;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    border-radius: 8px;
+} 
+#credText{
    
+   height: 60vh;
+   display: flex;
+   align-items: flex-end;
+   width: 40vw;
+   justify-content: center; 
+   font-size: 8pt;
+   
+}
+#credText a{
+    color: black;
+}  
+.account-text{
+    margin-top: 20px;
+    margin-left: 5%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+.account-text p{
+    display: inline;
+    font-size: small;
+}
+.account-text a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+

@@ -9,44 +9,58 @@
 </head>
 <body>
     <div class="container">
-    <div class="left" ><p id="credText">Photo by <a href="https://unsplash.com/@robin_schreiner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robin Schreiner</a> on <a href="https://unsplash.com/photos/YKE4zTW5lic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    <div class="left" >
+        <div class="forImage">
+        <div class="logo-text">
+           </div>
+        <div class="logo-bg">
+            <img src="images/odin-lined.png" alt="" id="odin-img"><h1>Museum</h1>
+        </div>
+</div>
+    
+        <div id="credText">Photo by <a href="https://unsplash.com/@robin_schreiner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robin Schreiner</a> on <a href="https://unsplash.com/photos/YKE4zTW5lic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
   
-    </p></div>
+        </div></div>
     <div class="right" >
         
-        <div class="message"><h2>This is not a real online service! You know you need something<br>
+        <div class="message"><p>This is not a real online service! You know you need something<br>
         like this in your life to help you realize your deepest dreams. <br>
     Sign up <em>now</em> to get started.
 <br><br>
  You <em>know</em> you want to.
-</h2></div>
+        </p></div>
+       
         <div class="form">
-            <h2>Let's do this!</h2>
-            <form action="/" method="POST">
+            <p class="form-title" id="account-form">Let's do this!</p>
+            <form id="account-form">
                 <div class="col1">
-                <label id="fname" >First Name: </label>
-                <input type="text">
+                <label id="fname" >*First Name: </label>
+                <input type="text" required>
                 <label id="lname" >Last Name: </label>
                 <input type="text">
-                <label id="Email" >Email: </label>
-                <input type="email">
+                <label id="Email" >*Email: </label>
+                <input type="email" required>
             </div>
 
 
                 <div class="col2">
                 <label id="phonenumber" >Phone Number: </label>
                 <input type="tel">
-                <label id="password" >Password: </label>
-                <input type="password">
-                <label id="confirm" >Confirm Password: </label>
-                <input type="password">
+                <label id="passwordLab" >*Password: </label>
+                <input type="password" id="password" required>
+                <label id="confirmLab" >*Confirm Password: </label>
+                <input type="password" id="confirm" required>
             </div>
                 
 
         </form>
     </div>
-        <div class="account"><p>hi</p></div>
+        <div class="account">
+            <button type="submit" form="account-form" value="submit" id="actBtn" onclick="validPw()">Create Account</button>
+            <div class="account-text"><p>Already have an account?</p><a href="/" id="account-text"> Log In</a></div>
+        </div>
     </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
